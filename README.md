@@ -40,7 +40,8 @@ mvn test
 
 The API test suite includes three test cases.
 
-`org.monese.apitest.UsersApiTest.createUser`
+### org.monese.apitest.UsersApiTest.createUser
+
 A positive test case to create a user.
 
 1. Make a POST request to create a new user, all fields should have valid values.
@@ -52,14 +53,16 @@ A positive test case to create a user.
    the
    POST request.
 
-`org.monese.apitest.UsersApiTest.createUserWithoutEmail`
+### org.monese.apitest.UsersApiTest.createUserWithoutEmail
+
 A negative test case to create a user without a mandatory field (email).
 
 1. Make a POST request to create a new user, all fields should have valid values, but email - don't send it.
 2. Verify that the status code is 422.
 3. Verify that the response says that the email field can't be blank.
 
-`org.monese.apitest.UsersApiTest.createUserAndVerifyIdIsNull`
+### org.monese.apitest.UsersApiTest.createUserAndVerifyIdIsNull
+
 The test assignment requires that one test case should fail. Here we successfully create a user and expect the id to
 be null. Since the id is never null, the test always fails.
 
@@ -91,7 +94,8 @@ mvn test
 
 The UI test suite includes three test cases.
 
-`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+### org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman
+
 A positive test case to translate a string from English to German.
 
 1. Launch the app.
@@ -101,8 +105,9 @@ A positive test case to translate a string from English to German.
 5. In the input field, enter: "Hello! Good morning."
 6. In the output field, verify: "Hallo! Guten Morgen."
 
-`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
-A negative test case to translate a string from English to German.
+### org.monese.uitest.TranslateYouUiTest.verifyDeepLDoesNotWorkWithoutApiKey
+
+A negative test case to verify an error message.
 
 1. Launch the app.
 2. Click on the three dots to expand the menu.
@@ -111,7 +116,8 @@ A negative test case to translate a string from English to German.
 5. Click on the back button.
 6. Verify that the error message appears: "Error in communicating with the server."
 
-`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+### org.monese.uitest.TranslateYouUiTest.translateFromEnglishToEstonian
+
 A failing test case to translate a string from English to Estonian.
 
 1. Launch the app.
