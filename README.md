@@ -41,6 +41,7 @@ mvn test
 The API test suite includes three test cases.
 
 `org.monese.apitest.UsersApiTest.createUser`
+
 A positive test case to create a user.
 
 1. Make a POST request to create a new user, all fields should have valid values.
@@ -53,6 +54,7 @@ A positive test case to create a user.
    POST request.
 
 `org.monese.apitest.UsersApiTest.createUserWithoutEmail`
+
 A negative test case to create a user without a mandatory field (email).
 
 1. Make a POST request to create a new user, all fields should have valid values, but email - don't send it.
@@ -60,6 +62,7 @@ A negative test case to create a user without a mandatory field (email).
 3. Verify that the response says that the email field can't be blank.
 
 `org.monese.apitest.UsersApiTest.createUserAndVerifyIdIsNull`
+
 The test assignment requires that one test case should fail. Here we successfully create a user and expect the id to
 be null. Since the id is never null, the test always fails.
 
@@ -92,6 +95,7 @@ mvn test
 The UI test suite includes three test cases.
 
 `org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+
 A positive test case to translate a string from English to German.
 
 1. Launch the app.
@@ -102,6 +106,7 @@ A positive test case to translate a string from English to German.
 6. In the output field, verify: "Hallo! Guten Morgen."
 
 `org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+
 A negative test case to translate a string from English to German.
 
 1. Launch the app.
@@ -112,6 +117,7 @@ A negative test case to translate a string from English to German.
 6. Verify that the error message appears: "Error in communicating with the server."
 
 `org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+
 A failing test case to translate a string from English to Estonian.
 
 1. Launch the app.
