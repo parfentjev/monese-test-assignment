@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.Optional;
 
-public class AbstractUiTest {
+public abstract class AbstractUiTest {
     private AppiumDriverLocalService service;
     private AndroidDriver driver;
 
