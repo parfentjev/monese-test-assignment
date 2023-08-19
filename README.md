@@ -105,9 +105,9 @@ A positive test case to translate a string from English to German.
 5. In the input field, enter: "Hello! Good morning."
 6. In the output field, verify: "Hallo! Guten Morgen."
 
-`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+`org.monese.uitest.TranslateYouUiTest.verifyDeepLDoesNotWorkWithoutApiKey`
 
-A negative test case to translate a string from English to German.
+A negative test case to verify an error message.
 
 1. Launch the app.
 2. Click on the three dots to expand the menu.
@@ -116,7 +116,7 @@ A negative test case to translate a string from English to German.
 5. Click on the back button.
 6. Verify that the error message appears: "Error in communicating with the server."
 
-`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToGerman`
+`org.monese.uitest.TranslateYouUiTest.translateFromEnglishToEstonian`
 
 A failing test case to translate a string from English to Estonian.
 
