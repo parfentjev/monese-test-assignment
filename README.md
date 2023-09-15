@@ -12,6 +12,8 @@ The project has the following requirements:
 * Generate a test report after execution.
 * Provide human-readable descriptions for automated tests.
 
+Here's an [additional blog post](https://fakeplastictrees.ee/post/6504a9b57cea059700edcc66/basic-api-and-ui-test-automation-framework) describing the project in details.
+
 # Build
 
 This project combines API and UI tests. In a real-life scenario, these tests might be stored in separate repositories
